@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex w-full flex-1 justify-center items-center">
 
           {/* Form Container  */}
-          <div className="flex flex-col justify-center items-stretch min-w-[416px]">
+          <div className="flex flex-col justify-center items-stretch gap-8 min-w-[416px]">
 
           {/* Email Input Field */}
           <InputField

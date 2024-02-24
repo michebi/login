@@ -26,7 +26,7 @@ const InputField: React.FC<InputFieldProps> = ({
 }) => {
   // Define base classes
   let inputClasses =
-    "text text-base text-font-primary bg-background-secondary-default border border-border-primary focus:border-border-brand mt-1 block w-full px-3 py-2 rounded-md placeholder-font-placeholder focus:outline-none focus:ring focus:ring-border-focus sm:text-sm transition duration-300 ease-in-out";
+    "text text-base text-font-primary bg-background-secondary-default border border-border-primary focus:border-border-brand mt-2 block w-full px-4 py-3 rounded-lg placeholder-font-placeholder focus:outline-none focus:ring focus:ring-border-focus sm:text-base transition duration-300 ease-in-out";
 
 
   // Conditionally apply styles based on props
