@@ -12,9 +12,9 @@ const Button: React.FC<ButtonProps> = ({
   disabled,
   ...props
 }) => {
-  const baseStyles = 'px-4 py-2 font-base text-white rounded-lg';
+  const baseStyles = 'px-4 py-3 font-base text-white rounded-xl';
   const variantStyles = {
-    primary: 'bg-blue-500 hover:bg-blue-700',
+    primary: 'bg-blue-500 hover:bg-blue-600',
     secondary: 'bg-green-500 hover:bg-green-700',
     outline: 'bg-transparent hover:bg-blue-500 text-blue-700 border border-blue-500 hover:text-white',
     tertiary: 'bg-yellow-500 hover:bg-yellow-700',

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import InputField from "./components/InputField";
 import Button from "./components/Button";
+import Divider from "./components/Divider";
 
 export default function Home() {
   return (
@@ -30,7 +31,13 @@ export default function Home() {
           />
           {/* Button Component */}
           <Button 
-          variant="primary">Click Me</Button>
+          variant="primary">Log in</Button>
+
+          <div className="flex items-center gap-4">
+        <Divider color="gray-200" thickness="1" className="flex-1" />
+        <span className="text-font-primary text-sm whitespace-nowrap">or</span>
+        <Divider color="gray-200" thickness="1" className="flex-1" />
+      </div>
           </div>
         </div>
       
