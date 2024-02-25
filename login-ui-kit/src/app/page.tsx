@@ -1,6 +1,6 @@
 import Image from "next/image";
 import InputField from "./components/InputField";
-
+import Button from "./components/Button";
 
 export default function Home() {
   return (
@@ -28,12 +28,15 @@ export default function Home() {
             type="password"
             isError={false}
           />
+          {/* Button Component */}
+          <Button 
+          variant="primary">Click Me</Button>
           </div>
         </div>
       
         {/* Right section */}
-        <div className="flex w-full flex-1 justify-center">
-        </div>
+        <div className="flex w-full flex-1 justify-center bg-neutral-900">
+          </div>
     </main>
   );
 }
