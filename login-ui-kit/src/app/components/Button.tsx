@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const baseStyles = 'px-4 py-3 font-base font-medium rounded-xl flex items-center justify-center gap-2 hover:transition duration-300 ease-in-out'; // Ensure flex layout
   const variantStyles = {
-    primary: 'bg-blue-500 text-white hover:bg-blue-600',
+    primary: 'bg-black text-white hover:bg-neutral-800',
     secondary: 'bg-green-500 hover:bg-green-700',
     outline: 'bg-transparent text-font-primary border border-primary hover:bg-neutral-100',
     tertiary: 'bg-yellow-500 hover:bg-yellow-700',

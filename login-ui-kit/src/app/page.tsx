@@ -13,11 +13,11 @@ export default function Home() {
         <div className="flex w-full flex-1 justify-center items-center">
 
           {/* Form Container  */}
-          <div className="flex flex-col justify-center items-stretch gap-8 min-w-[416px]">
+          <div className="flex flex-col justify-center items-stretch gap-4 min-w-[416px]">
 
           {/* Login Title */}
-          <h1 className="text-2xl font-bold text-center">Login into Michebi</h1> {/* Added h1 here */}
-          
+          <h1 className="text-2xl font-medium text-font-primary text-center">Login into Michebi</h1> 
+
           {/* Email Input Field */}
           <InputField
             label="Email"
@@ -26,23 +26,24 @@ export default function Home() {
             isError={false}
           />
 
-          {/* Password Input Field  */}
+          {/* Password Input Field - Hidden for design layout
           <InputField
             label="Password"
             name="password-input"
             type="password"
             isError={false}
-          />
+          /> */}
+
           {/* Button Component */}
           <Button 
-          variant="primary">Log in</Button>
+          variant="primary">Continue</Button>
 
           <div className="flex items-center gap-4">
             <Divider color="gray-200" thickness="1" className="flex-1" />
               <span className="text-font-secondary text-sm whitespace-nowrap">or</span>
             <Divider color="gray-200" thickness="1" className="flex-1" />
           </div>
-            <Button variant="primary" icon={<FcGoogle size={24} />}>
+            <Button variant="outline" icon={<FcGoogle size={24} />}>
               Sign in with Google
             </Button>
               </div>
