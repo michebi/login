@@ -12,11 +12,14 @@ export default function Home() {
         {/* Left section */}
         <div className="flex w-full flex-1 justify-center items-center">
 
-          {/* Form Container  */}
-          <div className="flex flex-col justify-center items-stretch gap-4 min-w-[416px]">
+        {/* Left Body */}
+        <div className="flex flex-col justify-center gap-8 mx-8 min-w-[416px]">
 
           {/* Login Title */}
           <h1 className="text-2xl font-medium text-font-primary text-center">Login into Michebi</h1> 
+
+          {/* Form Container  */}
+          <div className="flex flex-col justify-center items-stretch gap-4">
 
           {/* Email Input Field */}
           <InputField
@@ -48,6 +51,7 @@ export default function Home() {
             </Button>
               </div>
             </div>
+          </div>
       
         {/* Right section */}
         <div className="flex w-full flex-1 justify-center bg-neutral-900">

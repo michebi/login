@@ -6,10 +6,10 @@ interface InputFieldProps {
   name: string;
   placeholder?: string;
   type?: string;
-  isActive?: boolean; 
+  isActive?: boolean;
   isFocused?: boolean;
-  isError?: boolean; 
-  isDisabled?: boolean; 
+  isError?: boolean;
+  isDisabled?: boolean;
   helperText?: string;
 }
 
@@ -17,7 +17,7 @@ const InputField: React.FC<InputFieldProps> = ({
   label,
   name,
   placeholder,
-  type = 'text',
+  type = "text",
   isActive,
   isFocused,
   isError,
@@ -26,14 +26,19 @@ const InputField: React.FC<InputFieldProps> = ({
 }) => {
   // Define base classes
   let inputClasses =
-    "text text-base text-font-primary bg-background-secondary-default border border-border-primary focus:border-border-brand mt-2 block w-full px-4 py-3 rounded- placeholder-font-placeholder focus:outline-none focus:ring focus:ring-border-focus sm:text-base transition duration-300 ease-in-out";
-
+    "text text-base text-font-primary bg-background-secondary-default border border-border-primary focus:border-border-brand mt-2 block w-full px-4 py-3 rounded-xl placeholder-font-placeholder focus:outline-none focus:ring focus:ring-border-focus sm:text-base transition duration-300 ease-in-out";
 
   // Conditionally apply styles based on props
-  inputClasses += isError ? " border-border-negative" : " border-border-primary";
+  inputClasses += isError
+    ? " border-border-negative"
+    : " border-border-primary";
   inputClasses += isFocused ? " ring ring-border-focus" : "";
-  inputClasses += isActive ? " bg-bg-background-secondary-default" : " bg-bg-background-secondary-default";
-  inputClasses += isDisabled ? " bg-background-secondary-disabled text-font-disabled cursor-not-allowed border-border-disabled" : "";
+  inputClasses += isActive
+    ? " bg-bg-background-secondary-default"
+    : " bg-bg-background-secondary-default";
+  inputClasses += isDisabled
+    ? " bg-background-secondary-disabled text-font-disabled cursor-not-allowed border-border-disabled"
+    : "";
 
   return (
     <div className="inputField">
@@ -48,17 +53,16 @@ const InputField: React.FC<InputFieldProps> = ({
         className={inputClasses}
         disabled={isDisabled} // Apply the disabled attribute based on the isDisabled prop
       />
-      
+
       {helperText && (
-        <p className={`mt-2 text-sm ${isError ? 'text-font-negative' : 'text-font-secondary'}`}>
+        <p
+          className={`mt-2 text-sm ${isError ? "text-font-negative" : "text-font-secondary"}`}
+        >
           {helperText}
         </p>
       )}
-
     </div>
   );
 };
 
-
 export default InputField;
-
