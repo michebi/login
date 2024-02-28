@@ -1,7 +1,10 @@
 // components/Button.tsx
+import React from 'react';
+
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant: 'primary' | 'secondary' | 'outline' | 'tertiary';
   state?: 'danger' | 'success';
+  icon?: React.ReactNode; // Accept an icon component
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -10,9 +13,10 @@ const Button: React.FC<ButtonProps> = ({
   state,
   className,
   disabled,
+  icon, // Destructure the icon prop
   ...props
 }) => {
-  const baseStyles = 'px-4 py-3 font-base text-white rounded-xl';
+  const baseStyles = 'px-4 py-3 font-base text-white rounded-xl flex items-center justify-center gap-2'; // Ensure flex layout
   const variantStyles = {
     primary: 'bg-blue-500 hover:bg-blue-600',
     secondary: 'bg-green-500 hover:bg-green-700',
@@ -25,7 +29,6 @@ const Button: React.FC<ButtonProps> = ({
   };
   const disabledStyles = 'opacity-50 cursor-not-allowed';
 
-  // Merge styles based on props
   const buttonStyles = `${baseStyles} ${
     variantStyles[variant]
   } ${state ? stateStyles[state] : ''} ${disabled ? disabledStyles : ''} ${className}`;
@@ -36,6 +39,7 @@ const Button: React.FC<ButtonProps> = ({
       className={buttonStyles}
       disabled={disabled}
     >
+      {icon && <span className="icon">{icon}</span>} {/* Render the icon */}
       {children}
     </button>
   );
