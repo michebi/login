@@ -15,6 +15,9 @@ export default function Home() {
           {/* Form Container  */}
           <div className="flex flex-col justify-center items-stretch gap-8 min-w-[416px]">
 
+          {/* Login Title */}
+          <h1 className="text-2xl font-bold text-center">Login into Michebi</h1> {/* Added h1 here */}
+          
           {/* Email Input Field */}
           <InputField
             label="Email"

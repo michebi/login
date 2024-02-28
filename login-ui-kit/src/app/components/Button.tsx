@@ -16,11 +16,11 @@ const Button: React.FC<ButtonProps> = ({
   icon, // Destructure the icon prop
   ...props
 }) => {
-  const baseStyles = 'px-4 py-3 font-base text-white rounded-xl flex items-center justify-center gap-2'; // Ensure flex layout
+  const baseStyles = 'px-4 py-3 font-base font-medium rounded-xl flex items-center justify-center gap-2 hover:transition duration-300 ease-in-out'; // Ensure flex layout
   const variantStyles = {
-    primary: 'bg-blue-500 hover:bg-blue-600',
+    primary: 'bg-blue-500 text-white hover:bg-blue-600',
     secondary: 'bg-green-500 hover:bg-green-700',
-    outline: 'bg-transparent hover:bg-blue-500 text-blue-700 border border-blue-500 hover:text-white',
+    outline: 'bg-transparent text-font-primary border border-primary hover:bg-neutral-100',
     tertiary: 'bg-yellow-500 hover:bg-yellow-700',
   };
   const stateStyles = {
