@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 interface InputFieldProps {
-  label: string;
+  label?: string;
   name: string;
   placeholder?: string;
   type?: string;
@@ -11,6 +11,8 @@ interface InputFieldProps {
   isError?: boolean;
   isDisabled?: boolean;
   helperText?: string;
+  value?: string; 
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const InputField: React.FC<InputFieldProps> = ({
@@ -23,6 +25,8 @@ const InputField: React.FC<InputFieldProps> = ({
   isError,
   helperText,
   isDisabled,
+  value, 
+  onChange,
 }) => {
   // Define base classes
   let inputClasses =
@@ -52,6 +56,8 @@ const InputField: React.FC<InputFieldProps> = ({
         placeholder={placeholder}
         className={inputClasses}
         disabled={isDisabled} // Apply the disabled attribute based on the isDisabled prop
+        value={value} // Controlled component
+        onChange={onChange} // Handle changes
       />
 
       {helperText && (
