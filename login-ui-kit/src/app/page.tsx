@@ -48,9 +48,8 @@ export default function Home() {
       </div>
       
       {/* Right section - hidden on mobile, displayed from md breakpoint and up */}
-      <div className="hidden md:flex w-full md:w-1/2 lg:flex-1 justify-center bg-neutral-900">
-      <Spline scene="https://prod.spline.design/QU228sIg6JjfRSgi/scene.splinecode" />
-        {/* Right section content */}
+      <div className="hidden md:flex w-full md:w-1/2 lg:flex-1 justify-center bg-black">
+      <Spline scene="https://prod.spline.design/Du252TdoVyULk5MM/scene.splinecode" />
       </div>
     </main>
   );
