@@ -37,7 +37,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, onGoogleSignIn }) => {
 
   return (
     <div className="flex flex-col justify-center items-stretch gap-2">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <form onSubmit={handleSubmit}  className="flex flex-col gap-4">
         <div className="flex flex-col gap-2">
           <InputField
             placeholder="Email"
@@ -63,7 +63,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, onGoogleSignIn }) => {
         <div className="flex flex-col items-start gap-1">
             <div className="flex items-center gap-2 text-red-500 text-sm">
             <IoWarningOutline size={16} />
-            <span>Invalid login credentials. Please try again.</span>
+            <span>Your email or password is incorrect.</span>
             </div>
         </div>
         )}
