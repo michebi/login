@@ -28,7 +28,7 @@ export default function Home() {
     <main className="flex flex-row md:flex-row items-stretch h-screen">
       {/* Main container 100% VH */}
       {/* Left section */}
-      <div className="flex w-full md:w-1/2 lg:flex-1 justify-center items-center bg-background-primary-default dark: bg-background-secondary-disabled">
+      <div className="flex w-full md:w-1/2 lg:flex-1 justify-center items-center bg-background-primary-default dark: bg-background-primary-default">
         {/* Left Body */}
         <div className="flex flex-col justify-center w-full gap-8 mx-8 max-w-[416px]">
           {/* Login Title */}
