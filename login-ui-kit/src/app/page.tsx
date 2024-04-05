@@ -25,10 +25,10 @@ export default function Home() {
   const isTestLogin = true; // Set to false to render the actual login form
 
   return (
-    <main className="flex flex-row md:flex-row items-stretch h-screen bg-background-primary-default">
+    <main className="flex flex-row md:flex-row items-stretch h-screen">
       {/* Main container 100% VH */}
       {/* Left section */}
-      <div className="flex w-full md:w-1/2 lg:flex-1 justify-center items-center">
+      <div className="flex w-full md:w-1/2 lg:flex-1 justify-center items-center bg-background-primary-default dark: bg-background-secondary-disabled">
         {/* Left Body */}
         <div className="flex flex-col justify-center w-full gap-8 mx-8 max-w-[416px]">
           {/* Login Title */}
