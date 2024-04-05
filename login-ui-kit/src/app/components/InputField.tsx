@@ -11,7 +11,7 @@ interface InputFieldProps {
   isError?: boolean;
   isDisabled?: boolean;
   helperText?: string;
-  value?: string; 
+  value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -25,7 +25,7 @@ const InputField: React.FC<InputFieldProps> = ({
   isError,
   helperText,
   isDisabled,
-  value, 
+  value,
   onChange,
 }) => {
   // Define base classes

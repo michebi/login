@@ -7,6 +7,7 @@ import Divider from "./components/Divider";
 import { FcGoogle } from "react-icons/fc";
 import Spline from '@splinetool/react-spline';
 import LoginForm from "./components/LoginForm";
+import { ThemeProvider } from 'next-themes'
 
 export default function Home() {
   // Define the callback function for handling normal login
