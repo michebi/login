@@ -6,10 +6,12 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         "background-primary-default": "var(--neutral-white)",
+        "background-inverse-default": "var(--neutral-black)",
         "background-secondary-default": "var(--neutral-white)",
         "background-secondary-disabled": "var(--neutral-050)",
         "background-secondary-hover": "var(--neutral-050)",
