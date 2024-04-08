@@ -11,7 +11,7 @@ import { ThemeProvider } from 'next-themes'
 import { useTheme } from 'next-themes'
 
 export default function Home() {
-    
+
   const handleLogin = (email: string, password: string) => {
     console.log('Login attempt with:', email, password);
     // Here you would typically check the credentials or pass them to an API
@@ -22,7 +22,7 @@ export default function Home() {
     console.log('Google Sign-In attempt');
   };
 
-  const isTestLogin = true; 
+  const isTestLogin = true;
 
   return (
     // Overall Layout
