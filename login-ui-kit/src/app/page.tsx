@@ -7,8 +7,6 @@ import Divider from "./components/Divider";
 import { FcGoogle } from "react-icons/fc";
 import Spline from '@splinetool/react-spline';
 import LoginForm from "./components/LoginForm";
-import { ThemeProvider } from 'next-themes'
-import { useTheme } from 'next-themes'
 import RightSection from "./components/RightSection";
 
 export default function Home() {
@@ -44,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       <RightSection
-        roundedCorners={true}
+        roundedCorners={false}
         background="spline"
         spline="https://prod.spline.design/Du252TdoVyULk5MM/scene.splinecode"
       />

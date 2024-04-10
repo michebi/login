@@ -16,12 +16,12 @@ const RightSection: React.FC<RightSectionProps> = ({
   spline,
 }) => {
   return (
-    <div className="hidden md:flex w-full md:w-1/2 lg:flex-1 justify-center items-center bg-black">
-      <div
-        className={`w-full h-full ${
-          roundedCorners ? 'rounded-[32px] overflow-hidden' : ''
-        }`}
-      >
+    <div
+      className={`hidden md:flex w-full md:w-1/2 lg:flex-1 justify-center items-center ${
+        roundedCorners ? 'bg-white p-4' : 'bg-black'
+      }`}
+    >
+      <div className={`w-full h-full bg-black ${roundedCorners ? 'rounded-[16px] overflow-hidden' : ''}`}>
         {background === 'illustration' && illustrationSrc && (
           <div className="w-full h-full relative">
             <Image src={illustrationSrc} alt="Illustration" layout="fill" objectFit="cover" />
