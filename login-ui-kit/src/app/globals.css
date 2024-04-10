@@ -93,3 +93,12 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  input:-internal-autofill-selected {
+    appearance: none !important;
+    background-image: none !important;
+    background-color: #FFFFFF;
+    color: inherit !important;
+  }
+}

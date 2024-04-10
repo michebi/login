@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import InputField from "./components/InputField";
 import Button from "./components/Button";
@@ -7,6 +9,7 @@ import Spline from '@splinetool/react-spline';
 import LoginForm from "./components/LoginForm";
 import { ThemeProvider } from 'next-themes'
 import { useTheme } from 'next-themes'
+import RightSection from "./components/RightSection";
 
 export default function Home() {
 
@@ -29,7 +32,6 @@ export default function Home() {
       {/* Left-section */}
       <div className="flex w-full md:w-1/2 lg:flex-1 justify-center items-center bg-background-primary-default">
 
-        {/* Right Section */}
         <div className="flex flex-col justify-center w-full gap-8 mx-8 max-w-[416px]">
           <h1 className="text-2xl font-medium text-font-primary text-center">Login into Michebi</h1>
 
@@ -41,9 +43,11 @@ export default function Home() {
           )}
         </div>
       </div>
-      <div className="hidden md:flex w-full md:w-1/2 lg:flex-1 justify-center bg-black">
-        <Spline scene="https://prod.spline.design/Du252TdoVyULk5MM/scene.splinecode" />
-      </div>
+      <RightSection
+        roundedCorners={true}
+        background="spline"
+        spline="https://prod.spline.design/Du252TdoVyULk5MM/scene.splinecode"
+      />
     </main>
   );
 }

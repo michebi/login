@@ -38,8 +38,8 @@ const InputField: React.FC<InputFieldProps> = ({
     : " border-border-primary";
   inputClasses += isFocused ? " ring ring-border-focus" : "";
   inputClasses += isActive
-    ? " bg-bg-background-secondary-default"
-    : " bg-bg-background-secondary-default";
+    ? " bg-bg-background-primary-default"
+    : " bg-bg-background-primary-default";
   inputClasses += isDisabled
     ? " bg-background-secondary-disabled text-font-disabled cursor-not-allowed border-border-disabled"
     : "";
